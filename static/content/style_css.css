@@ -13,6 +13,7 @@ body {
 
 nav {
     display: flex;
+    flex-wrap: wrap; /* Allow nav items to wrap onto new lines */
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -27,7 +28,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 1rem; /* Use rem for scalable font size */
     transition: color 0.5s ease;
 }
 
@@ -80,12 +81,12 @@ section a:hover {
 
 button {
   position: relative;
-  margin-top: 20px !important;
+  margin-top: 20px;
   color: #fff;
   border: 1px solid;
-  background-color: #428bca !important;
-  border-color: #357ebd !important;
-  background-image: url("bg-btn-green.png")!important;
+  background-color: #428bca;
+  border-color: #357ebd;
+  background-image: url("bg-btn-green.png");
   padding: 1px 13px 3px 13px;
   height: 32px;
   min-width: 62px;
@@ -107,26 +108,19 @@ button:focus {
     align-items: center;
 }
 
-#api-key {
-    margin-bottom: 20px;
-    padding: 5px 10px;
-    font-size: 16px;
-    max-width: 800px; /* Adjust this value as needed */
-    width: 100%; /* Add this line */
-}
-
+#api-key,
 #user-input {
     margin-bottom: 20px;
     padding: 5px 10px;
     font-size: 16px;
-    max-width: 800px; /* Adjust this value as needed */
-    width: 100%; /* Add this line */
+    max-width: 800px;
+    width: 100%;
 }
 
 #response-container {
     margin-top: 20px;
-    max-width: 800px; /* Adjust this value as needed */
-    width: 100%; /* Add this line */
+    max-width: 800px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
 }
@@ -159,4 +153,70 @@ footer {
     width: 100%;
     font-size: 14px;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  h2 {
+      font-size: 1.75em;
+  }
+
+  .nav-style a {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 1px 10px 3px;
+    font-size: 16px;
+    height: 24px;
+    min-width: 50px;
+  }
+
+  nav a {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+
+  .common-section,
+  #api-key,
+  #user-input,
+  #response-container {
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  h2 {
+      font-size: 1.25em;
+  }
+
+  nav a {
+    font-size: 0.6rem; /* Decrease font size for smallest screens */
+  }
+
+  .nav-style a {
+    font-size: 10px;
+  }
+  
+  button {
+    padding: 1px 8px 3px;
+    font-size: 14px;
+    height: 22px;
+    min-width: 40px;
+  }
+
+  .common-section,
+  #api-key,
+  #user-input,
+  #response-container {
+    padding: 5px;
+    max-width: 100%;
+  }
 }

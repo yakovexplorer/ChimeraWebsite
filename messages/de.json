@@ -1,0 +1,22 @@
+{
+    "Index": {
+        "Placeholder": "placeholder"
+    },
+    "Home": {
+        "Hero": {
+            "title": "Lieferung von Weltklasse-KI mit",
+            "subtitle": "Verwenden Sie Ihre bevorzugte API · Keine Zahlung erforderlich",
+            "goToDiscord": "Gehe zu Discord"
+        },
+       
+        "Stats": {
+            "title": "Unser Service ist sehr beschäftigt",
+            "subtitle": "Erleben Sie mit uns beispiellose Effizienz! Jeden Tag verarbeiten wir nahtlos Zehntausende von Anfragen, streben unermüdlich danach, diesen Schwung zu halten und ständig nach noch größeren Höhen zu streben! Treten Sie uns bei und werden Sie Teil unserer expansiven Reise."
+        },
+        "Examples": {
+            "title": "...Aber Sie werden nicht beschäftigt sein, es herauszufinden!",
+            "subtitle": "Erleben Sie eine noch nie dagewesene Einfachheit mit unserem API-Service! Unser Service, der die offiziellen SDKs von ClosedAI nachahmt, gewährleistet eine nahtlose und schnelle Integration. Tauchen Sie ein in eine intuitive Umgebung, die auf Ihren Komfort und Ihre Effizienz ausgelegt ist.",
+            "getStarted": "Loslegen & mehr sehen..."
+        }
+    }
+}

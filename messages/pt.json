@@ -1,0 +1,21 @@
+{
+    "Index": {
+        "Placeholder": "espaço reservado"
+    },
+    "Home": {
+        "Hero": {
+            "title": "Entregando IA de classe mundial com",
+            "subtitle": "Use sua API favorita · Nenhum pagamento necessário",
+            "goToDiscord": "Ir para o Discord"
+        },
+        "Stats": {
+            "title": "Nosso serviço está muito ocupado",
+            "subtitle": "Experimente uma eficiência incomparável conosco! Todos os dias, processamos dezenas de milhares de solicitações sem problemas, lutando incansavelmente para manter esse ímpeto e sempre mirando alturas ainda maiores! Junte-se a nós e faça parte de nossa expansiva jornada."
+        },
+        "Examples": {
+            "title": "...Mas você não estará ocupado descobrindo!",
+            "subtitle": "Experimente a simplicidade como nunca antes com nosso serviço de API! Projetado para espelhar os SDKs oficiais nativos do ClosedAI, nosso serviço garante uma integração perfeita e rápida. Mergulhe em um ambiente intuitivo construído pensando no seu conforto e eficiência.",
+            "getStarted": "Comece e veja mais..."
+        }
+    }
+}

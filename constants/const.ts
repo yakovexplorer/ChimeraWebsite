@@ -1,4 +1,4 @@
-export const API_URL = 'https://chimeragpt.adventblocks.cc/v1';
+export const API_URL = 'https://chimeragpt.adventblocks.cc/api/v1';
 export const WEBSITE_URL = "https://chimeragpt.adventblocks.cc/"
 export const SERVICE_NAME = "ChimeraGPT"
 export const DISCORD_INVITE_URL = "https://discord.gg/chimeragpt"

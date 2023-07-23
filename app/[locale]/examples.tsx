@@ -108,7 +108,7 @@ const javaCode = `
   }
 `;
 
-export default function Example(props: {invite: string, language: string}) {
+export default function Example(props: { invite: string }) {
   const t = useTranslations('Home.Examples');
   const [selectedLanguage, setSelectedLanguage] = useState('python');
 

@@ -1,0 +1,22 @@
+{
+    "Index": {
+        "Placeholder": "placeholder"
+    },
+    "Home": {
+        "Hero": {
+            "title": "Dünya çapında AI sunuyoruz",
+            "subtitle": "Favori API'nizi kullanın · Ödeme gerekmez",
+            "goToDiscord": "Discord'umuza katılın!"
+        },
+        "Stats": {
+            "title": "Hizmetimiz çok yoğun",
+            "subtitle": "Bize katılarak eşsiz verimlilik deneyimi yaşayın! Her gün on binlerce isteği sorunsuz bir şekilde işliyoruz ve bu ivmeyi korumak için sürekli çaba gösteriyoruz. Daima daha büyük başarılara ulaşmayı hedefliyoruz. Bize katılın ve genişleyen yolculuğumuzun bir parçası olun."
+            
+        },
+        "Examples": {
+            "title": "...Ancak anlamakla uğraşırken meşgul olmayacaksınız!",
+            "subtitle": "API hizmetimizle daha önce hiç olmadığı kadar basitliğin tadını çıkarın! Native ClosedAI resmi SDK'larını yansıtmak üzere tasarlanan hizmetimiz, sorunsuz ve hızlı entegrasyon sağlar. Konforunuz ve verimliliğiniz göz önünde bulundurularak oluşturulmuş sezgisel bir ortama dalın.",
+            "getStarted": "Başlayın ve daha fazlasını görün..."
+        }
+    }
+}

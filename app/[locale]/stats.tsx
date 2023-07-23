@@ -1,8 +1,10 @@
 import React from 'react';
 import ProductTable from './table';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { API_URL as apiEndpoint } from '@/constants/const';
 export default function Statistics() {
-  //Todo, Make it dynamic!!!!!!
+  //to refactor
+  const url = `${apiEndpoint}/info`
   const t = useTranslations('Home.Stats')
   return (
     <section className="text-gray-600 body-font border-b-2 border-neutral-800 bg-gray-950">
@@ -30,7 +32,7 @@ export default function Statistics() {
           </div>
         </div>
         <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-          <ProductTable />
+          <ProductTable apiEndpoint={url} />
         </div>
       </div>
     </section>

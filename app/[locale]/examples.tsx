@@ -14,7 +14,7 @@ const pythonCode = `
   import openai
 
   openai.api_key = "your API KEY from 'key get' Discord command"
-  openai.api_base = "https://chimeragpt.adventblocks.cc/v1"
+  openai.api_base = "https://chimeragpt.adventblocks.cc/api/v1"
 
   response = openai.ChatCompletion.create(
       model='gpt-4',
@@ -32,7 +32,7 @@ const phpCode = `
   <?php
 
   $api_key = "your API KEY from 'key get' Discord command";
-  $api_base = "https://chimeragpt.adventblocks.cc/v1/chat/completions";
+  $api_base = "https://chimeragpt.adventblocks.cc/api/v1/chat/completions";
 
   $data = array(
     "model" => "gpt-4",
@@ -73,7 +73,7 @@ const javaCode = `
   public class Main {
     public static void main(String[] args) throws IOException {
       String api_key = "your API KEY from 'key get' Discord command";
-      String api_base = "https://chimeragpt.adventblocks.cc/v1/chat/completions";
+      String api_base = "https://chimeragpt.adventblocks.cc/api/v1/chat/completions";
 
       URL url = new URL(api_base);
       HttpURLConnection con = (HttpURLConnection) url.openConnection();

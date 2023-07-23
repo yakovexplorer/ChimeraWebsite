@@ -14,7 +14,7 @@ const pythonCode = `
   import openai
 
   openai.api_key = "your API KEY from 'key get' Discord command"
-  openai.api_base = "https://chimeragpt.adventblocks.cc/api/v1"
+  openai.api_base = "https://chimeragpt.adventblocks.cc/v1"
 
   response = openai.ChatCompletion.create(
       model='gpt-4',
@@ -32,7 +32,7 @@ const phpCode = `
   <?php
 
   $api_key = "your API KEY from 'key get' Discord command";
-  $api_base = "https://chimeragpt.adventblocks.cc/api/v1/chat/completions";
+  $api_base = "https://chimeragpt.adventblocks.cc/v1/chat/completions";
 
   $data = array(
     "model" => "gpt-4",
@@ -73,7 +73,7 @@ const javaCode = `
   public class Main {
     public static void main(String[] args) throws IOException {
       String api_key = "your API KEY from 'key get' Discord command";
-      String api_base = "https://chimeragpt.adventblocks.cc/api/v1/chat/completions";
+      String api_base = "https://chimeragpt.adventblocks.cc/v1/chat/completions";
 
       URL url = new URL(api_base);
       HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -140,17 +140,19 @@ export default function Example(props: { invite: string }) {
           <p className="text-gray-400 font-light md:text-lg dark:text-gray-400 mb-6">
             {t('subtitle')}
           </p>
-          <div className="flex items-center space-x-4 mb-6">
+          <div className="overflow-x-auto whitespace-nowrap">
+			<div className="inline-flex space-x-4">
             {languageData.map((language) => (
               <button
-                key={language.id}
-                className="inline-flex items-center justify-center w-full bg-slate-800 px-8 py-3 text-lg font-bold text-white transition-all duration-200 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 pointer-events-auto"
-                onClick={() => handleLanguageChange(language.id)}
-              >
-                {language.label}
-              </button>
+			  key={language.id}
+			  className="inline-flex items-center justify-center bg-slate-800 px-6 py-2 text-lg font-bold text-white transition-all duration-200 border-2 border-transparent rounded-xl font-pj hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+			  onClick={() => handleLanguageChange(language.id)}
+			>
+			  {language.label}
+			</button>
             ))}
-          </div>
+			</div>
+		  </div>
           <a
             href={props.invite}
             className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
@@ -174,4 +176,3 @@ export default function Example(props: { invite: string }) {
     </section>
   );
 };
-

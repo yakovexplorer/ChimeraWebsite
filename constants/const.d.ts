@@ -17,7 +17,7 @@ interface ServiceUrlsT {
   AUDIO_TRANSCRIPTION: {url: string, desc: string};
   AUDIO_TRANSLATIONS: {url: string, desc: string};
   TOKENIZER: {url: string, desc: string};
-  TTS: {url: string, desc: string}[];
+  TTS: {url: string, desc: string};
   MODELS: {url: string, desc: string};
   STATUS: {url: string, desc: string};
   FASTAPI: {url: string, desc: string};

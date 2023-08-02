@@ -16,7 +16,7 @@ type ModelTableProps = {
 const ModelTable: React.FC<ModelTableProps> = ({ data }) => {
   return (
     <div className="overflow-x-auto">
-      <table className="table bg-gray-950">
+      <table className="table bg-gray-950 stat-title">
         <thead>
           <tr>
             <th>ID</th>

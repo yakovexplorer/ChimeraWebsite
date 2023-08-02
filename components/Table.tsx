@@ -7,7 +7,7 @@ interface TableProps {
 const Table: React.FC<TableProps> = ({ endpoints }) => {
   return (
     <div className="overflow-x-auto ">
-       <table className="table bg-gray-950">
+       <table className="table bg-gray-950 stat-title">
       <thead>
         <tr>
           <th>URL</th>

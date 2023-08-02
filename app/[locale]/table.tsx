@@ -10,7 +10,7 @@ interface ResponseData {
 
 
 const MAX_ROWS = 5;
-export default function ProductTable({ apiEndpoint }: any) {
+const ProductTable = ({ apiEndpoint }: {apiEndpoint: string}) => {
     const [responseData, setResponseData] = useState<ResponseData | null>(null);
     const [showMore, setShowMore] = useState<boolean>(false);
 
@@ -32,9 +32,6 @@ export default function ProductTable({ apiEndpoint }: any) {
         setShowMore((prevShowMore) => !prevShowMore);
     };
 
-    if (!responseData) {
-        return <div>Loading...</div>;
-    }
 
     const displayedData = showMore
         ? Object.entries(responseData?.routes || {})
@@ -86,3 +83,5 @@ export default function ProductTable({ apiEndpoint }: any) {
         </div>
     );
 };
+
+export default ProductTable;

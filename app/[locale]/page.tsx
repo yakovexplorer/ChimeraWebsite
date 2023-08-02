@@ -1,15 +1,11 @@
 'use client'
 import Hero from "./hero"
-import Statistics from "./stats"
-import Examples from "./examples"
 import { NextSeo } from "next-seo"
-import { DISCORD_INVITE_URL, META } from "@/constants/const"
+import { ChimeraService, META } from "@/constants/const.d"
 import { useEffect, useRef } from "react"
 import Head from "next/head"
-import { useTranslations } from "next-intl"
 
 export default function Home() {
-  const t = useTranslations('Index')
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     if (canvasRef.current) {
@@ -46,21 +42,19 @@ export default function Home() {
       />
       <Head>
       </Head>
-      <div className="divide-y divide-neutral-800 border-b-2 border-neutral-800">
-        <div className="relative isolate overflow-hidden bg-black h-screen">
-          <div className="absolute h-full w-full">
-            <canvas className="absolute z-0 hidden h-screen w-full bg-black sm:block" ref={canvasRef}></canvas>
+      <div className="border-b-2 divide-y divide-neutral-800 border-neutral-800">
+        <div className="relative h-screen overflow-hidden bg-black isolate">
+          <div className="absolute w-full h-full">
+            <canvas className="absolute z-0 hidden w-full h-screen bg-black sm:block" ref={canvasRef}></canvas>
           </div>
-          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pointer-events-none relative z-10 grid items-center gap-16 py-6 sm:py-12 md:gap-8">
+          <div className="relative z-10 grid items-center w-full gap-16 px-4 py-6 mx-auto pointer-events-none max-w-7xl sm:px-6 lg:px-8 sm:py-12 md:gap-8">
             <div className="md:max-xl:flex">
-              <Hero invite={DISCORD_INVITE_URL} />
+              <Hero invite={ChimeraService.DISCORD_INVITE_URL} />
             </div>
           </div>
         </div>
       </div>
-      <Statistics />
-      <Examples invite={DISCORD_INVITE_URL} />
-
+      
       <script src="script.js" defer></script>
     </>
   )

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { twilight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-export default function MacWindow() {
+const MacWindow = () => {
     const [displayedCode, setDisplayedCode] = useState(['']);
     const codes = useMemo(() => [
         "Write python3 function that encodes string input into base64",
@@ -16,7 +16,7 @@ export default function MacWindow() {
     useEffect(() => {
         const timer = setInterval(() => {
             setDisplayedCode((prev) => {
-                let newDisplayedCode = [...prev];
+                const newDisplayedCode = [...prev];
                 if (currentLine.current < codes.length) {
                     if (currentCharacter.current < codes[currentLine.current].length) {
                         newDisplayedCode[currentLine.current] = (newDisplayedCode[currentLine.current] || "") + codes[currentLine.current][currentCharacter.current];
@@ -35,7 +35,7 @@ export default function MacWindow() {
             if (currentLine.current >= codes.length) {
                 clearInterval(timer);
             }
-        }, 10); // Adjust the interval to change typing speed
+        }, 5); // Adjust the interval to change typing speed
 
         return () => clearInterval(timer);
     }, [codes]);
@@ -75,3 +75,5 @@ export default function MacWindow() {
         </div>
     );
 };
+
+export default MacWindow;

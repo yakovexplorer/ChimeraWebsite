@@ -1,7 +1,7 @@
 'use client'
 import MacWindow from './terminal';
-import {useTranslations} from 'next-intl';
-export default function Hero(props: { invite: string }) {
+import { useTranslations } from 'next-intl';
+const Hero = (props: { invite: string }) => {
     const t = useTranslations('Home')
 
     return (
@@ -10,7 +10,7 @@ export default function Hero(props: { invite: string }) {
                 <div className="max-w-2xl mx-auto text-center">
 
                     <p className="mt-5 text-4xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
-                        
+
                         {t('Hero.title')}
                         <span className="relative inline-flex sm:inline">
                             <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
@@ -28,7 +28,7 @@ export default function Hero(props: { invite: string }) {
                             {t('Hero.goToDiscord')}
                         </a>
 
-                        
+
                     </div>
 
                     <p className="mt-8 text-base text-gray-400 font-inter">
@@ -50,3 +50,5 @@ export default function Hero(props: { invite: string }) {
 
     );
 };
+
+export default Hero;

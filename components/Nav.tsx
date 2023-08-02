@@ -1,23 +1,27 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ChimeraService } from "@/constants/const.d";
 
 const Navbar = () => {
   const URLS = [
+    
     { Home: "/" },
     { Docs: "/intel" },
-    { Status: "/status" },
+    { Examples: "/intel/samples" },
+    { FastApi: "/intel/fastapi" },
     { Discord: ChimeraService.DISCORD_INVITE_URL },
   ];
   return (
     <nav className="border-b-2 border-gray-200 bg-zinc-900 dark:bg-gray-800 dark:border-gray-700">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <a href="#" className="flex items-center">
-          {"Logo Here"}
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <Image src={"/assets/logo.svg"} height={32} width={32} alt="" />
+          <span className="self-center text-2xl font-bold whitespace-nowrap gradient-text">
             {ChimeraService.SERVICE_NAME}
           </span>
+          
         </a>
         <button
           data-collapse-toggle="navbar-solid-bg"

@@ -1,13 +1,11 @@
-import { ChimeraService } from "@/constants/const.d";
-import Link from "next/link";
 import React, { ReactNode } from "react";
-import Lottie from 'lottie-react'
 import LottieRender from "@/components/Intel/Lottie";
+import Navi from "@/components/Intel/Navi";
 
 const IntelLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <section className="bg-white rounded dark:bg-gray-800 patternBg">
+      <section className="bg-white border-b-2 border-gray-700 rounded dark:bg-gray-800 patternBg">
         <div className="px-4 py-12 mx-auto">
           <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div className="px-2 py-2 mr-auto place-self-center lg:col-span-7">
@@ -22,7 +20,7 @@ const IntelLayout = ({ children }: { children: ReactNode }) => {
                 incredible possibilities. Lets dive in and unlock the full
                 potential of our API together!
               </p>
-              <Link
+              {/* <Link
                 href="#"
                 className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
               >
@@ -39,28 +37,15 @@ const IntelLayout = ({ children }: { children: ReactNode }) => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </Link>
+              </Link> */}
             </div>
             <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <LottieRender />
+              <LottieRender />
             </div>
           </div>
         </div>
-        <div className="flex justify-center px-4 py-4">
-        <div className="tabs tabs-boxed">
-          <Link href="/intel" className="tab">
-            Models/Statuses
-          </Link>
-          <Link href="/intel/samples" className="tab tab-active">
-            Code samples
-          </Link>
-          <Link href="/tablez" className="tab">
-            Tab 3
-          </Link>
-        </div>
-      </div>
+        <Navi />
       </section>
-      
       {children}
     </>
   );

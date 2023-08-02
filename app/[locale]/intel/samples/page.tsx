@@ -1,10 +1,9 @@
 'use client'
-import Content from '@/components/Intel/Content'
+import Content from '@/app/[locale]/intel/content'
 import React from 'react'
 
-type Props = {}
 
-const Samples = (props: Props) => {
+const Samples = () => {
  
   return (
     <div className="bg-gray-900">

@@ -9,7 +9,7 @@ interface CodeExampleProps {
 
 const CodeExample: React.FC<CodeExampleProps> = ({ code, language }) => {
   return (
-    <div className="bg-gray-800 text-white w-full min-h-[400px] rounded-lg p-5 font-mono relative">
+    <div className="bg-gray-700 text-white w-full min-h-[400px] rounded-lg p-5 font-mono relative my-4">
       <div className="flex absolute top-2.5 left-2.5">
         <div className="h-3.5 w-3.5 bg-red-500 rounded-full mr-1.5"></div>
         <div className="h-3.5 w-3.5 bg-yellow-500 rounded-full mr-1.5"></div>

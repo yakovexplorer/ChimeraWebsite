@@ -5,18 +5,22 @@ interface ChimeraServiceT {
   SERVICE_NAME: string;
   DISCORD_INVITE_URL: string;
   LOGO: string;
+  GITHUB_URL: string;
+  VERSION: number;
 }
 interface ServiceUrlsT {
-  IMAGE_GENERATION: {url: string, desc: string}[];
-  CHAT_COMPLETIONS: {url: string, desc: string}[];
-  COMPLETIONS: {url: string, desc: string}[];
-  EMBEDDINGS: {url: string, desc: string}[];
-  MODERATION: {url: string, desc: string}[];
-  AUDIO_TRANSCRIPTION: {url: string, desc: string}[];
-  AUDIO_TRANSLATIONS: {url: string, desc: string}[];
-  TOKENIZER: {url: string, desc: string}[];
+  IMAGE_GENERATION: {url: string, desc: string};
+  CHAT_COMPLETIONS: {url: string, desc: string};
+  COMPLETIONS: {url: string, desc: string};
+  EMBEDDINGS: {url: string, desc: string};
+  MODERATION: {url: string, desc: string};
+  AUDIO_TRANSCRIPTION: {url: string, desc: string};
+  AUDIO_TRANSLATIONS: {url: string, desc: string};
+  TOKENIZER: {url: string, desc: string};
   TTS: {url: string, desc: string}[];
-  MODELS: {url: string, desc: string}[];
+  MODELS: {url: string, desc: string};
+  STATUS: {url: string, desc: string};
+  FASTAPI: {url: string, desc: string};
 }
 
 export const ChimeraService: ChimeraServiceT = {
@@ -24,7 +28,9 @@ export const ChimeraService: ChimeraServiceT = {
   WEBSITE_URL: "https://chimeragpt.adventblocks.cc",
   SERVICE_NAME: "ChimeraGPT",
   DISCORD_INVITE_URL: "https://discord.gg/chimeragpt",
-  LOGO: "/assets/logo.svg"
+  LOGO: "/assets/logo.svg",
+  GITHUB_URL: 'https://github.com/yakovexplorer/ChimeraWebsite',
+  VERSION: 2.141337
 
 }
 export const ServiceUrls: ServiceUrlsT = {
@@ -38,7 +44,8 @@ export const ServiceUrls: ServiceUrlsT = {
   TOKENIZER: {url: `${ChimeraService.API_URL}/tokenizer`, desc: 'An tokenizer from OpenAi'},
   TTS: {url: `${ChimeraService.API_URL}/tts/generate`, desc: 'An text to speech service from Google.'},
   MODELS: {url: `${ChimeraService.API_URL}/models`, desc: 'An endpoint that returns full model list supported by Chimera'},
-  STATUS: {url: `${ChimeraService.API_URL}/status`, desc: 'An endpoint which discloses the vitals of services.'}
+  STATUS: {url: `${ChimeraService.API_URL}/status`, desc: 'An endpoint which discloses the vitals of services.'},
+  FASTAPI: {url: `${ChimeraService.WEBSITE_URL}/api/docs`, desc: 'FastApi endpoint'}
 }
 export const META = {
   title: 'ChimeraGPT - World Class AI API',

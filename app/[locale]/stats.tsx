@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ProductTable from './table';
 import { useTranslations } from 'next-intl';
-import { API_URL as apiEndpoint } from '@/constants/const';
-export default function Statistics() {
+import { API_URL as apiEndpoint } from '@/constants/const.d';
+import Loading from './loading';
+const Statistics = () => {
   //to refactor
   const url = `${apiEndpoint}/info`
   const t = useTranslations('Home.Stats')
@@ -32,9 +33,13 @@ export default function Statistics() {
           </div>
         </div>
         <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+          
           <ProductTable apiEndpoint={url} />
+  
         </div>
       </div>
     </section>
   );
 };
+
+export default Statistics;

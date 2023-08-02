@@ -3,10 +3,11 @@ import Hero from "./hero"
 import Statistics from "./stats"
 import Examples from "./examples"
 import { NextSeo } from "next-seo"
-import { DISCORD_INVITE_URL, META } from "@/constants/const"
+import { DISCORD_INVITE_URL, META } from "@/constants/const.d"
 import { useEffect, useRef } from "react"
 import Head from "next/head"
 import { useTranslations } from "next-intl"
+
 
 export default function Home() {
   const t = useTranslations('Index')
@@ -60,6 +61,7 @@ export default function Home() {
       </div>
       <Statistics />
       <Examples invite={DISCORD_INVITE_URL} />
+      
 
       <script src="script.js" defer></script>
     </>

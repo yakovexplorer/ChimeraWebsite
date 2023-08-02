@@ -2,6 +2,8 @@ import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import {NextIntlClientProvider} from 'next-intl';
+import React from 'react'
+import Navbar from '@/components/Nav';
 const inter = Inter({ subsets: ['latin'] })
 export function generateStaticParams() {
   return [{locale: 'en'}, {locale: 'de'}, {locale: 'pl'}];
@@ -46,7 +48,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}><Navbar />{children}</body>
       </NextIntlClientProvider>
     </html>
   )

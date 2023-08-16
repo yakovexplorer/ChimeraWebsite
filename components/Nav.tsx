@@ -11,7 +11,7 @@ const Navbar = () => {
     { Docs: "/intel" },
     { Examples: "/intel/samples" },
     { FastApi: "/intel/fastapi" },
-    { Discord: ChimeraService.DISCORD_INVITE_URL },
+    { "NEW! Discord": ChimeraService.DISCORD_INVITE_URL },
   ];
   return (
     <nav className="border-b-2 border-gray-200 bg-zinc-900 dark:bg-gray-800 dark:border-gray-700">

@@ -27,7 +27,7 @@ export const ChimeraService: ChimeraServiceT = {
   API_URL: 'https://chimeragpt.adventblocks.cc/api/v1', //API_URL needs to remain localhost address OR static server ip, else the functions responsible for data fetching will keep hitting CF CDN (If we do have one)
   WEBSITE_URL: "https://chimeragpt.adventblocks.cc",
   SERVICE_NAME: "ChimeraGPT",
-  DISCORD_INVITE_URL: "https://discord.gg/chimeragpt",
+  DISCORD_INVITE_URL: "https://discord.gg/nYrwM7HHdA",
   LOGO: "/assets/logo.svg",
   GITHUB_URL: 'https://github.com/yakovexplorer/ChimeraWebsite',
   VERSION: 2.141337

@@ -26,7 +26,7 @@ interface ServiceUrlsT {
 export const ChimeraService: ChimeraServiceT = {
   API_URL: 'https://chimeragpt.adventblocks.cc/api/v1', //API_URL needs to remain localhost address OR static server ip, else the functions responsible for data fetching will keep hitting CF CDN (If we do have one)
   WEBSITE_URL: "https://chimeragpt.adventblocks.cc",
-  SERVICE_NAME: "ChimeraGPT",
+  SERVICE_NAME: "ChimeraAI",
   DISCORD_INVITE_URL: "https://discord.gg/nYrwM7HHdA",
   LOGO: "/assets/logo.svg",
   GITHUB_URL: 'https://github.com/yakovexplorer/ChimeraWebsite',
@@ -48,8 +48,8 @@ export const ServiceUrls: ServiceUrlsT = {
   FASTAPI: {url: `${ChimeraService.WEBSITE_URL}/api/docs`, desc: 'FastApi endpoint'}
 }
 export const META = {
-  title: 'ChimeraGPT - World Class AI API',
-  description: 'ChimeraGPT provides a world class API for Artificial Intelligence. Harness the power of AI in your applications with ease.',
+  title: 'ChimeraAI - World Class AI API',
+  description: 'ChimeraAI provides a world class API for Artificial Intelligence. Harness the power of AI in your applications with ease.',
   image: '/assets/metaimg.png',
   type: 'website',
   locale: 'en_US',
